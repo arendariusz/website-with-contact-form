@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”>
+<head>
+    <meta charset="UTF-8">
+    <title>MK Trans </title>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div th:replace="fragments :: header"></div>
+    <div layout:fragment="content"></div>
+    <div th:replace="fragments :: footer"></div>
+</div>
+</body>
+</html>
