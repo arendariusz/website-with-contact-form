@@ -2,12 +2,24 @@
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout.html}">
 <head>
-    <title>FHU Daremny Trud</title>
-    <script src="content-script.js"></script>
+    <title>Kontakt</title>
 </head>
 <body>
 <section layout:fragment="content">
-    <p>This is a paragraph from the content page</p>
+    <div id="contactForm">
+        <form method="post" action="/kontakt">
+            <label for="emailaddress">Twój adres email
+                <input name="email" type="email" id="emailaddress" placeholder="np. janKowalski@gmail.com">
+            </label><br>
+            <label for="name">Twoje imię/nazwa
+                <input name="name" type="text" id="name" placeholder="np. Jan Kowalski">
+            </label><br>
+            <label for="text">Treść wiadomości</label>
+            <textarea name="text" id="text" placeholder="Zacznij pisać..." rows="5" cols="30"></textarea>
+            </label><br>
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
 </section>
 </body>
 </html>
